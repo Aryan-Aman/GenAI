@@ -17,3 +17,8 @@ System Architecture :
 - System Query
 - Output >LLM API
 
+**Challenges In developing App**
+$1:Brain Build > *How to build/develope something which can understand the query and generate relevant response >**Solution LLMs***
+$2:Computation > *Extremely heavy model to be kept on own server/cloud will cause high computation and therefore high cost > **Solution: eg Chatgpt on openai server > can use their API***
+$3:System Orchestration > *Moving components like AWS S3,TEXT splitter, embedding, database, llm api and multiple tasks like load pdf, text split, generate embeddings, retrieval from DB all to be executed via a pipeline- complex workflow coding from scratch will cause difficulty - if any llm api or cloud changes made then code again from scratch - **Solution : Langchain***
+
