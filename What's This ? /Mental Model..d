@@ -1,4 +1,4 @@
-# FOUNDATION MMODELS: 
+# FOUNDATION MODELS: 
 -generalized models-can perform many tasks -bcz too much data fed, many parameters etc.- eg LLMs 
 
 # GEN AI - divided into two parts Either build foundation models (Builder Perspective) or use foundation models (User Perspective).
