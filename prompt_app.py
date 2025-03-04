@@ -2,10 +2,11 @@ from langchain_openai import ChatOpenAI
 from langchain_core.prompts import PromptTemplate
 from dotenv import load_dotenv
 import streamlit as st
+import os
 
 load_dotenv()
 
-model= ChatOpenAI()
+model= ChatOpenAI(model='gpt-3.5-turbo', api_key=os.getenv("OPENAI_API_KEY"))
 st.header("Research Assistant")
 
 # user_input=st.text_input("Enter the research paper you need to get summarry on !!")
@@ -33,14 +34,14 @@ input_length=st.selectbox(
 #building template
 template=PromptTemplate(
     input_variables=['select_paper', 'input_style','input_length'],
-    template="""Please summarize the research paper titled '{select_paper}' with following specifications:
+    template="""Please summarize the research paper titled "{select_paper}" with following specifications:
         Explanation style :{input_style}
         Explanation length : {input_length}
         Ensure the summary is clear, alligned with  the provided style and length and retains key insights from the paper.
         If certain information is not available in the paper, state that explicitly and provide relevant context where possible instead of guessing. 
         Here are the definitions of summary styles: 
         1. Mathematical Details :
-            -Focus on mathematical formulations, equations if preesent in the paper. 
+            -Focus on mathematical formulations, equations if pre sent in the paper. 
             -Include key formulas, derivations, and mathematical proofs when relevant.
         2. Code-oriented: 
             -Provide implementation details, pseudocode, or real code snippets in Python or relevant programming languages.
