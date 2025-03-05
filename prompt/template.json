@@ -1,0 +1,17 @@
+{
+    "name": null,
+    "input_variables": [
+        "input_length",
+        "input_style",
+        "select_paper"
+    ],
+    "optional_variables": [],
+    "output_parser": null,
+    "partial_variables": {},
+    "metadata": null,
+    "tags": null,
+    "template": "Please summarize the research paper titled \"{select_paper}\" with following specifications:\n        Explanation style :{input_style}\n        Explanation length : {input_length}\n        Ensure the summary is clear, alligned with  the provided style and length and retains key insights from the paper.\n        If certain information is not available in the paper, state that explicitly and provide relevant context where possible instead of guessing. \n        Here are the definitions of summary styles: \n        1. Mathematical Details :\n            -Focus on mathematical formulations, equations if pre sent in the paper. \n            -Include key formulas, derivations, and mathematical proofs when relevant.\n        2. Code-oriented: \n            -Provide implementation details, pseudocode, or real code snippets in Python or relevant programming languages.\n            -Focus on algorithmic structure and computational considerations. \n        3. Beginner-Friendly: \n            -Explain concepts in a simple, easy-to-understand manner, avoiding heavy jargon. Use analogies or everyday examples where possible. \n        4. Technical:\n            -Use domain-specific terminology and detailed explanations. \n            -Assume the reader has prior knowledge in the field. \n            -Provide in-depth theoretical or experimental analysis. \n        5. Comprehensive:\n            -Cover all aspects, including background, methodology, key findings, and implications. \n            -Aim for completeness with structured explanations.\n        If certain information is not available in the paper, respond with: \"Insufficient information available\" instead of guessing.  \n        Ensure the summary is clear, accurate, and aligned with the provided style and length.",
+    "template_format": "f-string",
+    "validate_template": true,
+    "_type": "prompt"
+}
