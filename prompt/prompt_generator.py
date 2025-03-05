@@ -24,6 +24,8 @@ template=PromptTemplate(
         5. Comprehensive:
             -Cover all aspects, including background, methodology, key findings, and implications. 
             -Aim for completeness with structured explanations.
+        6. 2. Analogies:  
+            - Use relatable analogies to simplify complex ideas.
         If certain information is not available in the paper, respond with: "Insufficient information available" instead of guessing.  
         Ensure the summary is clear, accurate, and aligned with the provided style and length.""",
         input_variables=['select_paper', 'input_style','input_length'],
