@@ -20,3 +20,5 @@
 -Langchain ecosystem 
 
 #Template.json file automatically created when after running prompt_generator.py file
+#invoke is called 2 time - for prompt template and for model in response.- 2 step process>prompt designed then sending to llm 
+- **use CHAIN** to call invoke only once >tie both steps to create chain template and model

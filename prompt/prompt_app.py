@@ -32,12 +32,14 @@ input_length=st.selectbox(
 )
 
 template=load_prompt('template.json')
-formatted_prompt= template.invoke({
-    "select_paper": select_paper,
-    "input_style": input_style,
-    "input_length": input_length
-})
+
 if st.button('summarize'):
-    # res= model.invoke(user_input)
-    response=model.invoke(formatted_prompt)
+    chain = template | model # template formed then passed to model
+    response= chain.invoke(
+    {
+        "select_paper": select_paper,
+        "input_style": input_style,
+        "input_length": input_length
+    }   
+)
     st.write(response.content)  
