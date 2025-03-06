@@ -22,3 +22,12 @@
 #Template.json file automatically created when after running prompt_generator.py file
 #invoke is called 2 time - for prompt template and for model in response.- 2 step process>prompt designed then sending to llm 
 - **use CHAIN** to call invoke only once >tie both steps to create chain template and model
+
+![invoke](images/invoke.png)
+![chat_prompt_template_argument](image.png) > ![Output](image-1.png)> wrong 
+-*LangChain's ChatPromptTemplate.from_messages() expects a list of tuples (("role", "message")), not actual SystemMessage or HumanMessage objects.*
+
+
+**Message Placeholder**
+-in langchain is a special placeholder used inside a ChatPromptTemplate to dynamically insert chat history or a list of messages at runtime.
+-eg. A customer raised a return related issue for his order, after few days again he asks for refund , chat_history.txt is a file somewhere stored in cloud db for eg. .
