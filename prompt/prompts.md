@@ -23,6 +23,7 @@
 #invoke is called 2 time - for prompt template and for model in response.- 2 step process>prompt designed then sending to llm 
 - **use CHAIN** to call invoke only once >tie both steps to create chain template and model
 
+prompt_in_langchain
 ![invoke](images/invoke.png)
 ![chat_prompt_template_argument](image.png) > ![Output](image-1.png)> wrong 
 -*LangChain's ChatPromptTemplate.from_messages() expects a list of tuples (("role", "message")), not actual SystemMessage or HumanMessage objects.*
@@ -31,3 +32,17 @@
 **Message Placeholder**
 -in langchain is a special placeholder used inside a ChatPromptTemplate to dynamically insert chat history or a list of messages at runtime.
 -eg. A customer raised a return related issue for his order, after few days again he asks for refund , chat_history.txt is a file somewhere stored in cloud db for eg. .
+=======
+**Code Snippets and modifications**
+-Code without chat history passed to model
+<img width="256" alt="image" src="https://github.com/user-attachments/assets/bae8b55d-f582-42dd-ab01-6264bc72cbd0" />
+-Output > <img width="727" alt="image" src="https://github.com/user-attachments/assets/49594031-0ba1-418c-814e-3c9ddf365f8f" />
+-Output after using chat_history: <img width="722" alt="image" src="https://github.com/user-attachments/assets/0592c5e9-3bd9-43e7-bbe7-e55bff384041" />
+-*All messages as it is who sent what no information-will be difficult for llm if particular message was by user or llm-create error*
+-#therefore when maintaining a caht history>store all the messages awa who sent that message> maintain a dictionary user and a#
+-*NO NEED OF MAINTAINING DICTIONARY > SOLVED BY LANGCHAIN LIBRARY -BUIT IN CLASSES*
+
+**#Messages in Langchain**(refer messages.py file)
+1.) System messages
+2.) Human Message
+3.) AI Message

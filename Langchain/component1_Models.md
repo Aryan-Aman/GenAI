@@ -19,3 +19,13 @@ eg: llama, deepseek,mistral,falcon
 Disadvantages
 **Commercial/Closed source Models**
 - model on companys server, can be interacted via models API > cost of using api.
+
+
+**LANGUAGE MODELS**
+-AI systms designed to process generate and understand natural lang text.
+-![languageModels](https://github.com/user-attachments/assets/4c15cbaf-72bf-4f6f-b20a-6fd6a97f59d5)
+-LLM : Genaral purpose models - *any NLP Application >text,code,summarizn, ques ans. Text I/P O/P - Old - replaced by chat models.*
+-Chat models : conversational task - *I/P :Squence /  Multiple of messages O/P : chat messages - newer models used more comparison to LLMs*
+ <img width="314" alt="image" src="https://github.com/user-attachments/assets/05908a43-b768-4c00-b91c-dfbf939d2c95" />
+
+-![openmodels](https://github.com/user-attachments/assets/5b0a7d60-9361-490e-9d7c-941d7d056366)
