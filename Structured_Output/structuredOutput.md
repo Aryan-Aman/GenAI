@@ -21,3 +21,6 @@
                
 
 !!Problem Statement > Reviews of phone > send to llm > o/p should be structured (dict).keys>summary and sentiment 
+    Code ? working > when we call with_structures_output() and provides a structure/schema -behind the scene a prompt gets generated >then a review gets attached > llm is trained to give json output > so gives the same.
+
+-*Annotated : LLM is well trained> got to know whats summary and sentiment, but there can be ambuigity sometime to solve this we can guide llm by attacking line so that llm can get to know. this is known as annotation.*
