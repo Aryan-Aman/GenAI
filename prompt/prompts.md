@@ -1,4 +1,4 @@
--*Prompts are the input/instructions/queries given to model to guide its output*
+<img width="368" alt="image" src="https://github.com/user-attachments/assets/eb58f0a1-693a-4d78-a37e-a2b1cebda8c9" />-*Prompts are the input/instructions/queries given to model to guide its output*
 **Types**
 1) Text based
 2) Multimodal (images/videos/sound)
@@ -24,9 +24,13 @@
 - **use CHAIN** to call invoke only once >tie both steps to create chain template and model
 
 prompt_in_langchain
-![invoke](images/invoke.png)
-![chat_prompt_template_argument](image.png) > ![Output](image-1.png)> wrong 
--*LangChain's ChatPromptTemplate.from_messages() expects a list of tuples (("role", "message")), not actual SystemMessage or HumanMessage objects.*
+![invoke](https://github.com/user-attachments/assets/d883b073-46df-4437-98ee-be6fdbbf8633)
+
+<img width="368" alt="image" src="https://github.com/user-attachments/assets/85ef73b9-6580-49d6-b0c0-64bdb0ea1148" /><img width="758" alt="image-1" src="https://github.com/user-attachments/assets/09cbd7b3-548d-4e99-92b8-f6ed11c227e1" />
+
+wrong 
+-*LangChain's ChatPromptTemplate.from_![Uploading image.png…]()
+messages() expects a list of tuples (("role", "message")), not actual SystemMessage or HumanMessage objects.*
 
 
 **Message Placeholder**
