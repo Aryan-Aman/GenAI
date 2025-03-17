@@ -1,4 +1,4 @@
-<img width="368" alt="image" src="https://github.com/user-attachments/assets/eb58f0a1-693a-4d78-a37e-a2b1cebda8c9" />-*Prompts are the input/instructions/queries given to model to guide its output*
+-*Prompts are the input/instructions/queries given to model to guide its output*
 **Types**
 1) Text based
 2) Multimodal (images/videos/sound)
