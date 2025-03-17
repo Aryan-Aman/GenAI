@@ -26,11 +26,11 @@
 prompt_in_langchain
 ![invoke](https://github.com/user-attachments/assets/d883b073-46df-4437-98ee-be6fdbbf8633)
 
-<img width="368" alt="image" src="https://github.com/user-attachments/assets/85ef73b9-6580-49d6-b0c0-64bdb0ea1148" /><img width="758" alt="image-1" src="https://github.com/user-attachments/assets/09cbd7b3-548d-4e99-92b8-f6ed11c227e1" />
+<img width="368" alt="image" src="https://github.com/user-attachments/assets/85ef73b9-6580-49d6-b0c0-64bdb0ea1148" /> 
+wrong : <img width="758" alt="image-1" src="https://github.com/user-attachments/assets/09cbd7b3-548d-4e99-92b8-f6ed11c227e1" />
 
-wrong 
--*LangChain's ChatPromptTemplate.from_![Uploading image.png…]()
-messages() expects a list of tuples (("role", "message")), not actual SystemMessage or HumanMessage objects.*
+
+-*LangChain's ChatPromptTemplate.from_messages() expects a list of tuples (("role", "message")), not actual SystemMessage or HumanMessage objects.*
 
 
 **Message Placeholder**
