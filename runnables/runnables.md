@@ -22,8 +22,7 @@ Runnables
 -eg visualize considering lego blocks
 
 
-![alt text](runnables\runables.drawio.png)
-
+![alt text](runables.drawio.png)
 **Runnable Sequence**
 -Sequential chain of runnables in langchain that executes each step one after another, passing output of one step as the input to next.
 -useful when need to compose multiple runnables together in a structured workflow.
